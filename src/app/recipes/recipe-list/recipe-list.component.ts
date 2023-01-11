@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Recipe} from "../recipe.model";
+import {Recipe} from "../../shared/recipe.model";
 
 @Component({
   selector: 'app-recipes-list',
@@ -9,6 +9,10 @@ import {Recipe} from "../recipe.model";
 
 export class RecipeListComponent {
   recipes: Recipe[] = [
+    new Recipe("Recipe 1", "This recipe is made with fire and water", "https://picsum.photos/600/600"),
+    new Recipe("Recipe 1", "This recipe is made with fire and water", "https://picsum.photos/600/600"),
+    new Recipe("Recipe 1", "This recipe is made with fire and water", "https://picsum.photos/600/600"),
+    new Recipe("Recipe 1", "This recipe is made with fire and water", "https://picsum.photos/600/600"),
     new Recipe("Recipe 1", "This recipe is made with fire and water", "https://picsum.photos/600/600")
   ]
 
