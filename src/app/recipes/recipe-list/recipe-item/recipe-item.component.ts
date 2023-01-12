@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Recipe} from "../../../shared/recipe.model";
 
 @Component({
   selector: 'app-recipe-item',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent {
+  @Input() recipe: Recipe = {name: "", description: "", imagePath: ""};
+  @Output() recipeItemClicked: EventEmitter<void> = new EventEmitter<void>();
 
+  onRecipeItemClicked(){
+    console.log("Recipe Item Clicked - recipe-item.component")
+    this.recipeItemClicked.emit()
+  }
 }

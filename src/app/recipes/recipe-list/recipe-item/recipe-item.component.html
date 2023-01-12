@@ -1,1 +1,11 @@
-<p>recipe-item works!</p>
+<a href="#" class="list-group-item clearfix" (click)="onRecipeItemClicked()">
+  <div class="d-lg-flex align-items-center justify-content-between mb-5">
+    <div>
+      <h4>{{recipe.name}}</h4>
+      <p>{{recipe.description}}</p>
+    </div>
+    <span class="pull-right">
+          <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-fluid" style="max-height: 100px;"/>
+        </span>
+  </div>
+</a>

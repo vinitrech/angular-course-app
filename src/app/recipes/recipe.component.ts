@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Recipe} from "../shared/recipe.model";
 
 @Component({
   selector: 'app-recipes',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./recipe.component.css']
 })
 export class RecipeComponent {
+  recipeClicked: Recipe | undefined;
 
+  onRecipeClicked(recipe: Recipe) {
+    this.recipeClicked = recipe;
+  }
 }
