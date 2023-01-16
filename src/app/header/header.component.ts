@@ -6,10 +6,12 @@ import {Component, EventEmitter, Output} from "@angular/core";
   styleUrls: ['header.component.css']
 })
 
-export class HeaderComponent{
-  @Output() featureSelected:EventEmitter<string> = new EventEmitter<string>();
+export class HeaderComponent {
+  isMenuCollapsed: boolean = true
+  @Output() featureSelected: EventEmitter<string> = new EventEmitter<string>();
 
-  onSelect(feature: string){
-      this.featureSelected.emit(feature);
+  onSelect(feature: string) {
+    this.isMenuCollapsed = true
+    this.featureSelected.emit(feature);
   }
 }
