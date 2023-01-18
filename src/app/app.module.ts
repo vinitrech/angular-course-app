@@ -11,6 +11,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {DropdownDirective} from "./shared/dropdown.directive";
+import {ShoppingListService} from "./shared/ShoppingListService";
 
 @NgModule({
   declarations: [
