@@ -10,10 +10,7 @@ import {RecipesService} from "../../../shared/RecipesService";
 export class RecipeItemComponent {
   @Input() recipe: Recipe = new Recipe("", "", "", []);
 
-  constructor(private recipesService: RecipesService) {
+  constructor() {
   }
 
-  onRecipeItemClicked(){
-    this.recipesService.selectedRecipe.emit(this.recipe);
-  }
 }
