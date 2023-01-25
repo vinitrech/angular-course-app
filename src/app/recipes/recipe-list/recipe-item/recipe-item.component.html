@@ -1,5 +1,5 @@
-<a class="list-group-item clearfix">
-  <div class="d-lg-flex align-items-center justify-content-between mb-5">
+<a [routerLink]="[index]" class="list-group-item clearfix" routerLinkActive="activeItem">
+  <div class="d-lg-flex align-items-center justify-content-between mb-5 p-1">
     <div>
       <h4>{{recipe.name}}</h4>
       <p>{{recipe.description}}</p>

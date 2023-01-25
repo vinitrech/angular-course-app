@@ -31,11 +31,15 @@ export class RecipesService {
     },
   ]
 
+  getRecipe(id: number) {
+    return this.recipes[id];
+  }
+
   getRecipes() {
     return this.recipes.slice(); // slice used to send a copy to the client, not the actual instance of the array
   }
 
   addIngredients(ingredients: Ingredient[]) {
-      this.shoppingListService.addIngredients(ingredients);
+    this.shoppingListService.addIngredients(ingredients);
   }
 }
