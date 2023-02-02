@@ -21,7 +21,7 @@
         <a [routerLink]="['edit']" ngbDropdownItem>
           Edit Recipe
         </a>
-        <button ngbDropdownItem>Delete Recipe</button>
+        <button ngbDropdownItem (click)="deleteRecipe()">Delete Recipe</button>
       </div>
     </div>
   </div>
