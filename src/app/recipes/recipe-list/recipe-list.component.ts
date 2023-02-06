@@ -1,6 +1,6 @@
 import {Component, EventEmitter, OnDestroy, OnInit, Output} from '@angular/core';
 import {Recipe} from "../../shared/recipe.model";
-import {RecipesService} from "../../shared/RecipesService";
+import {RecipesService} from "../../shared/recipesService";
 import {Subscription} from "rxjs";
 
 @Component({

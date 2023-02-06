@@ -17,8 +17,8 @@
             <a type="button" class="nav-link" id="dropdownBasicTop" ngbDropdownToggle> Manage <span
               class="caret"></span> </a>
             <div ngbDropdownMenu aria-labelledby="dropdownBasicTop">
-              <button ngbDropdownItem>Fetch data</button>
-              <button ngbDropdownItem>Save data</button>
+              <button ngbDropdownItem (click)="onFetchData()">Fetch data</button>
+              <button ngbDropdownItem (click)="onSaveData()">Save data</button>
             </div>
           </div>
         </li>
