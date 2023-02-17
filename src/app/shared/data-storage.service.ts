@@ -3,7 +3,7 @@ import {HttpClient,} from "@angular/common/http";
 import {RecipesService} from "./recipesService";
 import {Recipe} from "./recipe.model";
 import {map, tap} from "rxjs";
-import {environment} from "../../environments/environment";
+import {environment} from "../../environment";
 
 @Injectable({providedIn: 'root'})
 export class DataStorageService {
