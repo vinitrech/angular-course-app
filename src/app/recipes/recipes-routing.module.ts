@@ -22,7 +22,7 @@ const routes: Routes = [
 
 @NgModule({
     imports: [RouterModule.forChild(routes)], // This is the correct use of forChild, not forRoot. forRoot can only be used on the root module. Any other routes are blended with them.
-    exports: [RouterModule]
+    exports: [RouterModule],
 })
 export class RecipesRoutingModule {
 
