@@ -5,3 +5,4 @@ export const environment = {
     apiSignUpUrl: 'https://identitytoolkit.googleapis.com/v1/accounts:signUp',
     apiSignInUrl: 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword'
 };
+// 'ng build' uses this environment by default, as configured in angular.json
